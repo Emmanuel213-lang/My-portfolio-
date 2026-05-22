@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Emax.dev</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- LOGIN MODAL OVERLAY -->
+  <div class="auth-overlay" id="loginOverlay">
+    <div class="auth-modal" id="loginModal">
+      <div class="auth-modal-glow"></div>
+      <div class="auth-logo">⚡ Emax.dev</div>
+      <h2 class="auth-title">Welcome Back</h2>
+      <p class="auth-subtitle">Login to continue your experience</p>
+
+      <div class="user-welcome" id="userWelcome"></div>
+
+      <form id="loginForm" class="auth-form">
+        <div class="input-group">
+          <span class="input-icon">📧</span>
+          <input type="email" id="loginEmail" placeholder="Email Address" required autocomplete="off"/>
+        </div>
+        <div class="input-group">
+          <span class="input-icon">🔒</span>
+          <input type="password" id="loginPassword" placeholder="Password" required/>
+          <span class="toggle-pw" onclick="togglePassword('loginPassword', this)">👁</span>
+        </div>
+        <div id="loginError" class="auth-error"></div>
+        <button type="submit" class="auth-btn">Login</button>
+      </form>
+
+      <p class="auth-switch">New user?
+        <a href="registration.html" class="auth-link">Register here</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
