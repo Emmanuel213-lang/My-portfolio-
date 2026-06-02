@@ -18,22 +18,22 @@
 
       <form id="registrationForm" class="auth-form">
         <div class="input-group">
-          <span class="input-icon">👤</span>
+          <span class="input-icon"><i class="fas fa-user"></i></span>
           <input type="text" id="regName" placeholder="Full Name" required autocomplete="off"/>
         </div>
         <div class="input-group">
-          <span class="input-icon">📧</span>
+          <span class="input-icon"><i class="fas fa-envelope"></i></span>
           <input type="email" id="regEmail" placeholder="Email Address" required autocomplete="off"/>
         </div>
         <div class="input-group">
-          <span class="input-icon">🔒</span>
+          <span class="input-icon"><i class="fas fa-lock"></i></span>
           <input type="password" id="regPassword" placeholder="Password" required/>
-          <span class="toggle-pw" onclick="togglePassword('regPassword', this)">👁</span>
+          <span class="toggle-pw" onclick="togglePassword('regConfirm', this)"><i class="fas fa-eye"></i></span>
         </div>
         <div class="input-group">
-          <span class="input-icon">🔒</span>
+          <span class="input-icon"><i class="fas fa-lock"></i></span>
           <input type="password" id="regConfirm" placeholder="Confirm Password" required/>
-          <span class="toggle-pw" onclick="togglePassword('regConfirm', this)">👁</span>
+          <span class="toggle-pw" onclick="togglePassword('regConfirm', this)"><i class="fas fa-eye"></i></span>
         </div>
         <div id="regError" class="auth-error"></div>
         <button type="submit" class="auth-btn">Register Now</button>
